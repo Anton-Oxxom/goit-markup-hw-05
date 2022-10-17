@@ -118,17 +118,39 @@ body{
     line-height: 1.14; 
     text-decoration: none;
     letter-spacing: 0.02em;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
+    
 }
 
 .site-nav .link.current {
     color: var(--accent-color);   
 }
 
+.site-nav .item-line::after {
+    content: "dbfhfgsgh";
+    display: block;
+    width: 100%;
+}
+
+/*
+display: flex;
+justify-content: center;
+align-items: center;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+*/
 
 /* Site contact*/
 .site-contact-head {
@@ -148,6 +170,8 @@ body{
     text-decoration: none;
     letter-spacing: 0.02em;
     color: #757575;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-icon {
@@ -165,6 +189,7 @@ body{
     column-gap: 10px;
     align-items: center;
 }
+
 
 /* board */
 .board {
@@ -207,6 +232,8 @@ body{
     letter-spacing: 0.06em;
     cursor: pointer;
     border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-order {
@@ -264,6 +291,8 @@ body{
     line-height: 1.71;
 }
 
+
+
 /*Work */
 .work {
     padding-top: 0px;
@@ -273,6 +302,25 @@ body{
     padding-top: 0px;
     display: flex;
     column-gap: 30px;
+    position: relative;
+}
+
+.work-box {
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 0;
+}
+
+.work-box-description {
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 27px;
+    color: var(--primary-white-color);
 }
 
 /* Team */
@@ -322,7 +370,9 @@ body{
     align-items: center;
     width: 44px;
     height: 44px;
-    border-radius: 50%;   
+    border-radius: 50%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
@@ -332,6 +382,8 @@ body{
 
 .social-list-icon {
     fill: #AFB1B8;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover .social-list-icon,
@@ -361,6 +413,8 @@ body{
     border: 1px solid;
     border-color: #AFB1B8;
     border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item {
@@ -376,6 +430,8 @@ body{
 
 .clients-list-icon {
     fill: #AFB1B8;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-link:hover .clients-list-icon,
@@ -395,6 +451,8 @@ body{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-adress-footer .link:hover,
@@ -405,6 +463,8 @@ body{
 .site-contact-footer .link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-contact-footer .link:hover,
@@ -452,6 +512,8 @@ body{
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-list-link:hover,
@@ -484,7 +546,8 @@ body{
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    padding: 6px 22px;   
+    padding: 6px 22px;  
+   
 }
 
 .button-portfolio .link:hover,
@@ -526,8 +589,14 @@ body{
     border-bottom: 1px solid #EEEEEE;
 }
 
+.portfolio-list-link {
+    display: block;
+}
+
 .portfolio-list-link:hover,
 .portfolio-list-link:focus {
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
