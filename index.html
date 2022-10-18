@@ -57,7 +57,7 @@
       <section class="board">
         <div class="container">
           <h1 class="board-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="btn button-order">Замовити послугу</button>
+          <button type="button" class="btn button-order" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -567,9 +567,9 @@
       </div>
     </footer>
     <!--Backdrop-->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="close-button">
+        <button type="button" class="close-button" data-modal-close>
           <svg class="modal-close-icon" width="18" height="18">
             <use href="./images/sprite.svg#icon-close-button"></use>
           </svg>
